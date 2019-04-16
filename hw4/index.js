@@ -8,11 +8,13 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'Alice was beginning to get very tired of sitting by her sister on the bank.',
+      'Alice had been looking over his shoulder with some curiosity.',
   'example2':
-      'Buda-Pesth seems a wonderful place.',
+      '"Unclean! Unclean! Even the Almighty shuns my polluted flesh!',
   'example3':
-      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.'      
+      'The Greeks dismay'd, confused, disperse or fall',
+  'example4':
+      'bitter complaints of their inattention to what was going forward.'  
 };
 
 function status(statusText) {
