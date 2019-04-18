@@ -14,7 +14,7 @@ const examples = {
   'example3':
       'The Greeks dismayd, confused, disperse or fall',
   'example4':
-      'bitter complaints of their inattention to what was going forward.'  
+      'bitter complaints of their inattention to what was going forward.'    
 };
 
 function status(statusText) {
@@ -49,11 +49,11 @@ function doPredict(predict) {
   const result = predict(textField.value);
   score_string = "Class scores: ";
   for (var x in result.score) {
-    score_string += x + " ->  " + result.score[x].toFixed(4) + ", "
+    score_string += x + " ->  " + result.score[x].toFixed(3) + ", "
   }
   //console.log(score_string);
   status(
-      score_string + ' elapsed: ' + result.elapsed.toFixed(4) + ' ms)');
+      score_string + ' elapsed: ' + result.elapsed.toFixed(3) + ' ms)');
 }
 
 function prepUI(predict) {
@@ -128,10 +128,10 @@ class Classifier {
     for (let i = 0; i < inputText.length; ++i) {
       const word = inputText[i];
       inputBuffer.set(this.wordIndex[word], 0, i);
-      console.log(word, this.wordIndex[word], inputBuffer);
+      //console.log(word, this.wordIndex[word], inputBuffer);
     }
     const input = inputBuffer.toTensor();
-    console.log(input);
+    //console.log(input);
 
     status('Running inference');
     const beginMs = performance.now();
