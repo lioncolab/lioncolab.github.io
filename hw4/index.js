@@ -128,10 +128,10 @@ class Classifier {
     for (let i = 0; i < inputText.length; ++i) {
       const word = inputText[i];
       inputBuffer.set(this.wordIndex[word], 0, i);
-      //console.log(word, this.wordIndex[word], inputBuffer);
+      console.log(word, this.wordIndex[word], inputBuffer);
     }
     const input = inputBuffer.toTensor();
-    //console.log(input);
+    console.log(input);
 
     status('Running inference');
     const beginMs = performance.now();
