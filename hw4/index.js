@@ -12,7 +12,7 @@ const examples = {
   'example2':
       '"Unclean! Unclean! Even the Almighty shuns my polluted flesh!',
   'example3':
-      'The Greeks dismay'd, confused, disperse or fall',
+      'The Greeks dismayd, confused, disperse or fall',
   'example4':
       'bitter complaints of their inattention to what was going forward.'  
 };
